@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	<title>Diego Gruber, PhD  - Product Management Director at Boston Consulting Group (BCG)</title>
+	<style>
+  	:root {
+  --accent:#BC1B39;
+  --anchor-color: #2C85B1;
+  --blue:#2C85B1;
+  --copy-color-light: #666666;
+  --copy-color: #242424;
+  --grey:#999999;
+  --light-grey:#ededed;
+  --white:#FFFFFF;
+  --base-font-size: 12pt;
+  --spacing-double: 1rem;
+  --spacing-small: .1rem;
+  --spacing: .5rem;
+}
+@media (min-width: 567px) {
+  :root {
+    --spacing-double: 1.5rem;
+    --spacing-small: .25rem;
+    --spacing: .75rem;
+  }
+}
+@media print {
+  :root {
+    --anchor-color: #000000;
+    --base-font-size: 9pt;
+    --copy-color-light: #000000;
+    --copy-color: #000000;
+  }
+}
+
+body {
+  color: var(--copy-color);
+  display: flex;
+  font: var(--base-font-size) "Open Sans", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  line-height: 1.25;
+  -webkit-print-color-adjust: exact;
+}
+
+em {
+  color: var(--grey);
+}
+
+p {
+  font-size: 90%;
+}
+
+a {
+  color: var(--anchor-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+section {
+  margin: var(--spacing) 0 var(--spacing-double);
+}
+
+blockquote {
+  margin-bottom: 0 0 var(--spacing);
+}
+
+#resume {
+  background: var(--white);
+  margin: var(--spacing) var(--spacing-double);
+  max-width: 760px;
+}
+
+section.heading header h1 {
+  font-size: 180%;
+  font-weight: 300;
+  margin: 0;
+}
+section.heading header h2 {
+  font-size: 140%;
+  font-weight: 400;
+  margin: 0;
+}
+section.heading header h2::after {
+  display: none;
+}
+section.heading header .contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing);
+}
+@media (min-width: 567px) {
+  section.heading header .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+section.heading header address {
+  font-size: 90%;
+  font-style: normal;
+  padding-bottom: var(--spacing);
+}
+section.heading .profiles {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--spacing);
+}
+@media (min-width: 567px) {
+  section.heading .profiles {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+section.heading .profiles .profile.print {
+  display: none;
+}
+@media print {
+  section.heading .profiles .profile.print {
+    display: block;
+  }
+}
+section.heading .profiles strong {
+  margin: 0 var(--spacing-small) 0 0;
+}
+section.heading .profiles span {
+  margin: 0 var(--spacing-double) 0 0;
+}
+
+section.experience .item {
+  border-bottom: 1px solid var(--light-grey);
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
+}
+section.experience .item:last-child {
+  border-bottom: none;
+}
+section.experience .item header a,
+section.experience .item header h3 {
+  color: var(--copy-color);
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+}
+@media (max-width: 566px) {
+  section.experience .item header .subhead {
+    flex-direction: column;
+    margin-bottom: var(--spacing-double);
+  }
+}
+section.experience .item .summary p {
+  margin-top: var(--spacing);
+}
+section.experience .item .summary p:first-child {
+  margin-top: var(--spacing-small);
+}
+section.experience .item .summary p:last-child {
+  margin-bottom: var(--spacing-small);
+}
+section.experience .item .position {
+  color: var(--copy-color-light);
+  font-size: 100%;
+  font-weight: 500;
+  margin: var(--spacing-small) 0;
+}
+section.experience .item .startDate,
+section.experience .item .endDate {
+  color: var(--grey);
+}
+section.skills .item {
+  margin: 0;
+  padding: 0 0 var(--spacing);
+}
+section.skills .item:first-child {
+  margin-top: var(--spacing);
+}
+section.skills .item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.skills .item .name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+section.skills .item .keywords {
+  display: inline-block;
+  font-size: 90%;
+  vertical-align: top;
+}
+
+section.volunteering .item .position {
+  font-weight: 600;
+}
+section.volunteering .item header .subhead {
+  margin-top: var(--spacing);
+}
+section.projects .item strong {
+  color: var(--copy-color-light);
+  font-weight: 600;
+  display: inline-block;
+  padding-top: var(--spacing);
+}
+section.awards .item .title {
+  font-weight: 600;
+}
+section.publications .item .name {
+  font-weight: 600;
+}
+section.languages .language-item {
+  align-items: baseline;
+  display: flex;
+  justify-content: start;
+}
+section.languages .language-item:first-child {
+  margin-top: var(--spacing);
+}
+section.languages .language-item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.languages .language-item .language {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+section.languages .language-item .fluency {
+  color: var(--copy-color-light);
+  font-style: italic;
+}
+
+section.interests .item {
+  margin-bottom: var(--spacing);
+}
+section.interests .item:last-child {
+  margin-bottom: var(--spacing);
+}
+section.interests .item .name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 var(--spacing) 0 0;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+section.references .item blockquote {
+  font-style: italic;
+  margin-bottom: 0;
+  margin-left: var(--spacing);
+}
+section.references .item .name {
+  color: var(--copy-color-light);
+}
+
+section h2 {
+  color: var(--accent);
+  font-size: 135%;
+  font-weight: 400;
+  margin: 0 0 var(--spacing-double);
+  position: relative;
+  text-transform: uppercase;
+}
+section h2::after {
+  background: var(--accent);
+  bottom: -10px;
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 2.5rem;
+}
+section header h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+section.experience .item .highlights, section.volunteering .highlights, section.projects .highlights,
+section.projects .keywords,
+section.projects .roles, section.education .item .courses {
+  font-size: 90%;
+  line-height: 1.3;
+  list-style: square;
+  margin: var(--spacing-small) 0 var(--spacing);
+  padding-left: var(--spacing-double);
+}
+
+section.experience .item, section.volunteering .item, section.projects .item, section.education .item, section.awards .item, section.publications .item, section.interests .item, section.references .item {
+  page-break-inside: avoid;
+}
+
+@media print {
+  section.heading .profiles .profile:not(.print), section.publications .item .website {
+    display: none;
+  }
+}
+
+section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 567px) {
+  section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+    flex-direction: row;
+  }
+}
+
+@media print {
+  body {
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+	</style>
+	<style media="print">
+		body { font-size: 12px; }
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+	
+	</head>
+  <body>	
+    <div id="resume">
+      <section id="heading" class="heading">
+        <header>
+          <h1>
+            Diego Gruber, PhD
+          </h1>
+          <h2>Product Management Director at Boston Consulting Group (BCG)</h2>
+          <div class="summary"><p>From ideation to prototyping and continuous delivery, I've helped to design and develop systems that automate and improve decisions at some of the most important companies in the world with the use of big data and artificial intelligence. </p><p>In 2013 I co-founded Kernel Analytics, a data science boutique in Barcelona, Spain. In the space of six years the company grew from ten to close to one-hundred employees and a second office in Madrid. Kernel Analytics was acquired by the Boston Consulting Group in 2019 and I have been with BCG since, first as a Lead Data Scientist and now as Product Management Director, building products that help our clients transform key activities by leveraging their data assets together with the latest in machine learning. </p><p>I believe deep product knowledge is key to successful delivery and bridging the gap between business users and engineers. I love programming and software development. I prioritize building robust and scalable systems while adhering to software engineering best practices. </p><p>I've managed several teams working in problems related to personalisation and marketing across a wide range of industries, including telco, utilities, retail, travel, and more.</p><p>I hold a PhD in Economics from the Autonomous University of Barcelona (UAB). During my studies I developed a strong interest in Statistics, Econometrics, and predictive modelling. I also enjoy teaching and I've held data science workshops for students and professionals at places like the European Central Bank and the Barcelona Graduate School of Economics.</p></div>
+          <div class="contact">
+            <span class="contact-detail"><a href="mailto:diego.gruber@gmail.com">diego.gruber@gmail.com</a></span>
+          </div>
+          <address>
+            <span class="address-detail">Sankt Johann in Tirol,</span>
+            <span class="address-detail">Austria</span>
+          </address>
+        </header>
+      
+        <div class="profiles">
+          <div class="profile">
+            <strong class="network">LinkedIn</strong>
+            <span class="username">
+              <a href="https://www.linkedin.com/in/diegogruber/" target="external">@diegogruber</a>
+            </span>
+          </div>
+          <div class="profile print">
+            <span class="username">
+              https://www.linkedin.com/in/diegogruber/
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <section class="item">
+          <h2>Experience</h2>
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/boston-consulting-group/" target="external">Boston Consulting Group (BCG)</a></h3>
+            <div class="subhead">
+            <span class="position">Product Management Director</span>
+            <small class="dates">Jul 2022
+             - Sep 2023</small>
+            </div>
+          </header>
+          <div class="summary"><p>I lead a hybrid team of paid-media experts, data scientists, and software engineers to design and deliver a cloud-based product for automated optimization of digital advertising campaigns, significantly reducing costs for our clients while sustaining or improving conversion rates.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/boston-consulting-group/" target="external">Boston Consulting Group (BCG)</a></h3>
+            <div class="subhead">
+            <span class="position">Lead Data Scientist</span>
+            <small class="dates">May 2019
+             - Jul 2022</small>
+            </div>
+          </header>
+          <div class="summary"><p>Managed teams of data scientists and software engineers at multiple clients, including many of the main players in the telco and energy spaces in Belgium, Austria, Mexico, Spain, among others, where we lead the transformation of marketing and pricing functions towards a more personalized and data-driven approach, resulting in reduced customer attrition and increased cross-sell and upsell opportunities.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/kernel-analytics/" target="external">Kernel Analytics</a></h3>
+            <div class="subhead">
+            <span class="position">Co-Founder &amp; Team Lead</span>
+            <small class="dates">May 2013
+             - May 2019</small>
+            </div>
+          </header>
+          <div class="summary"><p>As co-founder and partner I was involved in all major decisions of the company and helped to manage learning and development of our teams, the procurement of development tools, as well as to define best practices in engineering.</p><p>As a data science lead, I helped to develop systems to improve decision-making for our clients in a wide variety of areas: </p></div>
+          <ul class="highlights">
+            <li>Marketing personalization for fashion and consumer brands</li>
+            <li>Automated pricing systems for an international hotel chain</li>
+            <li>Optimal network expansion algorithms for natural gas distribution</li>
+            <li>Logistics optimization for international fashion and sport retailers</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/accenture/" target="external">Accenture</a></h3>
+            <div class="subhead">
+            <span class="position">Data Scientist</span>
+            <small class="dates">Mar 2012
+             - Apr 2013</small>
+            </div>
+          </header>
+          <div class="summary"><p>Full-time data scientist following the acquisition of Neo Metrics by Accenture in 2012.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Neo Metrics</h3>
+            <div class="subhead">
+            <span class="position">Data Scientist (Part-time)</span>
+            <small class="dates">Sep 2010
+             - Mar 2012</small>
+            </div>
+          </header>
+          <div class="summary"><p>Development of analytical solutions for clients.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/eli-lilly-and-company/" target="external">Eli Lilly and Company</a></h3>
+            <div class="subhead">
+            <span class="position">Statistical Analyst (Internship)</span>
+            <small class="dates">Feb 2005
+             - Jul 2005</small>
+            </div>
+          </header>
+          <div class="summary"><p>Statistical analysis of clinical trial data for pharmaceutical research.</p></div>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/school/medizinische-universitat-wien/" target="external">Medical University of Vienna</a></h3>
+            <div class="subhead">
+            <span class="position">Statistical Analyst (Part-time)</span>
+            <small class="dates">Apr 2002
+             - Jun 2005</small>
+            </div>
+          </header>
+          <div class="summary"><p>Statistical support in clinical trial design and analysis of the resulting data for researchers in the medical and pharmaceutical sciences. See [publications](https://www.researchgate.net/profile/Diego-Gruber/research)</p></div>
+        </section>
+      </section>
+      <section id="skills" class="skills">
+        <div class="item">
+          <h2>Skills</h2>
+          <div class="name">Product Management</div>
+          <div class="keywords">
+            Ideation,
+            Definition,
+            Prototyping,
+            Iteration,
+            Validation,
+            Testing,
+            Commercialisation
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Team Management</div>
+          <div class="keywords">
+            Agile,
+            Scrum
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Programming &amp; Data</div>
+          <div class="keywords">
+            Python,
+            R,
+            SQL,
+            PySpark
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Application Development</div>
+          <div class="keywords">
+            Data management,
+            Automation,
+            DevOps,
+            MLOps,
+            APIs
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Data Science &amp; AI</div>
+          <div class="keywords">
+            Statistics,
+            Econometrics,
+            Predictive Modelling,
+            Machine Learning,
+            Deep Learning
+          </div>
+        </div>
+        <div class="item">
+          <div class="name">Communication</div>
+          <div class="keywords">
+            Data Visualization,
+            Writing,
+            Public Speaking,
+            Teaching,
+            Documentation
+          </div>
+        </div>
+      </section>
+      <section id="education" class="education">
+        <div class="item">
+          <h2>Education</h2>
+          <header>
+              <h3 class="name">Universidad Autònoma de Barcelona</h3>
+            <small class="dates">
+              <span class="startDate">Dec 2007</span>
+              <span class="endDate"> - Dec 2012</span>
+            </small>
+          </header>
+          <div class="qualification">
+            <span class="studyType">Doctor of Philosophy (Ph.D.)</span>
+            <span class="area">Economics</span>
+          </div>
+        </div>
+        <div class="item">
+          <header>
+              <h3 class="name">Universität Wien / University of Vienna</h3>
+            <small class="dates">
+              <span class="startDate">Dec 2001</span>
+              <span class="endDate"> - Dec 2005</span>
+            </small>
+          </header>
+          <div class="qualification">
+            <span class="studyType">Master&#x27;s degree</span>
+            <span class="area">Economics</span>
+          </div>
+        </div>
+      </section>
+      <section id="languages" class="languages">
+        <div class="item">
+          <h2>Languages</h2>
+          <div class="language-item">
+            <span class="language">Spanish:</span>
+            <span class="fluency">Native Speaker</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="language-item">
+            <span class="language">English:</span>
+            <span class="fluency">Full Professional</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="language-item">
+            <span class="language">German:</span>
+            <span class="fluency">Full Professional</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="language-item">
+            <span class="language">Catalan:</span>
+            <span class="fluency">Full Professional</span>
+          </div>
+        </div>
+      </section>
+    </div>
+	</body>
+</html>
