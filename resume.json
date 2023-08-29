@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Diego Gruber, PhD",
+    "label": "Product Management Director at Boston Consulting Group (BCG)",
+    "image": "",
+    "email": "diego.gruber@gmail.com",
+    "phone": "",
+    "summary": "From ideation to prototyping and continuous delivery, I've helped to design and develop systems that automate and improve decisions at some of the most important companies in the world with the use of big data and artificial intelligence. \n\nIn 2013 I co-founded Kernel Analytics, a data science boutique in Barcelona, Spain. In the space of six years the company grew from ten to close to one-hundred employees and a second office in Madrid. Kernel Analytics was acquired by the Boston Consulting Group in 2019 and I have been with BCG since, first as a Lead Data Scientist and now as Product Management Director, building products that help our clients transform key activities by leveraging their data assets together with the latest in machine learning. \n\nI believe deep product knowledge is key to successful delivery and bridging the gap between business users and engineers. I love programming and software development. I prioritize building robust and scalable systems while adhering to software engineering best practices. \n\nI've managed several teams working in problems related to personalisation and marketing across a wide range of industries, including telco, utilities, retail, travel, and more.\n\nI hold a PhD in Economics from the Autonomous University of Barcelona (UAB). During my studies I developed a strong interest in Statistics, Econometrics, and predictive modelling. I also enjoy teaching and I've held data science workshops for students and professionals at places like the European Central Bank and the Barcelona Graduate School of Economics.",
+    "location": {
+      "city": "Sankt Johann in Tirol",
+      "region": "Austria"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "diegogruber",
+        "url": "https://www.linkedin.com/in/diegogruber/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Boston Consulting Group (BCG)",
+      "position": "Product Management Director",
+      "startDate": "2022-07-31",
+      "endDate": "2023-09-30",
+      "summary": "I lead a hybrid team of paid-media experts, data scientists, and software engineers to design and deliver a cloud-based product for automated optimization of digital advertising campaigns, significantly reducing costs for our clients while sustaining or improving conversion rates.",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/boston-consulting-group/",
+      "location": "Barcelona, Catalonia, Spain"
+    },
+    {
+      "name": "Boston Consulting Group (BCG)",
+      "position": "Lead Data Scientist",
+      "startDate": "2019-05-31",
+      "endDate": "2022-07-31",
+      "summary": "Managed teams of data scientists and software engineers at multiple clients, including many of the main players in the telco and energy spaces in Belgium, Austria, Mexico, Spain, among others, where we lead the transformation of marketing and pricing functions towards a more personalized and data-driven approach, resulting in reduced customer attrition and increased cross-sell and upsell opportunities.",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/boston-consulting-group/",
+      "location": "Barcelona, Catalonia, Spain"
+    },
+    {
+      "name": "Kernel Analytics",
+      "position": "Co-Founder & Team Lead",
+      "startDate": "2013-05-31",
+      "endDate": "2019-05-31",
+      "summary": "As co-founder and partner I was involved in all major decisions of the company and helped to manage learning and development of our teams, the procurement of development tools, as well as to define best practices in engineering.\n\nAs a data science lead, I helped to develop systems to improve decision-making for our clients in a wide variety of areas: ",
+      "highlights": [
+        "Marketing personalization for fashion and consumer brands", 
+        "Automated pricing systems for an international hotel chain",
+        "Optimal network expansion algorithms for natural gas distribution",
+        "Logistics optimization for international fashion and sport retailers"],
+      "url": "https://www.linkedin.com/company/kernel-analytics/",
+      "location": "Barcelona"
+    },
+    {
+      "name": "Accenture",
+      "position": "Data Scientist",
+      "startDate": "2012-03-31",
+      "endDate": "2013-04-30",
+      "highlights": [],
+      "summary": "Full-time data scientist following the acquisition of Neo Metrics by Accenture in 2012.",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "Barcelona"
+    },
+    {
+      "name": "Neo Metrics",
+      "position": "Data Scientist (Part-time)",
+      "startDate": "2010-09-30",
+      "endDate": "2012-03-31",
+      "highlights": [],
+      "summary": "Development of analytical solutions for clients."
+    },
+    {
+      "name": "Eli Lilly and Company",
+      "position": "Statistical Analyst (Internship)",
+      "startDate": "2005-02-28",
+      "endDate": "2005-07-31",
+      "highlights": [],
+      "summary": "Statistical analysis of clinical trial data for pharmaceutical research.",
+      "url": "https://www.linkedin.com/company/eli-lilly-and-company/",
+      "location": "Vienna, Austria"
+    },
+    {
+      "name": "Medical University of Vienna",
+      "position": "Statistical Analyst (Part-time)",
+      "startDate": "2002-04-30",
+      "endDate": "2005-06-30",
+      "highlights": [],
+      "summary": "Statistical support in clinical trial design and analysis of the resulting data for researchers in the medical and pharmaceutical sciences. See [publications](https://www.researchgate.net/profile/Diego-Gruber/research)",
+      "url": "https://www.linkedin.com/school/medizinische-universitat-wien/"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Autònoma de Barcelona",
+      "area": "Economics",
+      "studyType": "Doctor of Philosophy (Ph.D.)",
+      "startDate": "2007-12-31",
+      "endDate": "2012-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universität Wien / University of Vienna",
+      "area": "Economics",
+      "studyType": "Master's degree",
+      "startDate": "2001-12-31",
+      "endDate": "2005-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Product Management",
+      "level": "",
+      "keywords": ["Ideation", "Definition", "Prototyping", "Iteration", "Validation", "Testing", "Commercialisation"]
+    },
+    {
+      "name": "Team Management",
+      "level": "",
+      "keywords": ["Agile", "Scrum"]
+    },
+    {
+      "name": "Programming & Data",
+      "level": "",
+      "keywords": ["Python", "R", "SQL", "PySpark"]
+    },
+    {
+      "name": "Application Development",
+      "level": "",
+      "keywords": ["Data management", "Automation", "DevOps", "MLOps", "APIs"]
+    },
+    {
+      "name": "Data Science & AI",
+      "level": "",
+      "keywords": ["Statistics", "Econometrics", "Predictive Modelling", "Machine Learning", "Deep Learning"]
+    },
+    {
+      "name": "Communication",
+      "level": "",
+      "keywords": ["Data Visualization", "Writing", "Public Speaking", "Teaching", "Documentation"]
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "Spanish"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "English"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "German"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "Catalan"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "elegant"
+  }
+}
