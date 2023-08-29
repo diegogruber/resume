@@ -6,14 +6,7 @@ Uses [`resumed`](https://github.com/rbardini/resumed) to generate HTML from a JS
 npm install -g resumed jsonresume-theme-elegant jsonresume-theme-full
 ```
 
-For updating the site on Pages using theme Elegant:
+For updating, apply changes to `resume.json` and then run `update.sh`. This will create two versions:
 
-```
-resumed render resume.json --theme jsonresume-theme-elegant -o index.html
-```
-
-For creating a version suitable for PDF printing using theme Full:
-
-```
-resumed render resume.json --theme jsonresume-theme-full -o forpdf.html
-```
+- `index.html` which is rendered by Github Pages
+- `resume.html` which is suitable for printing as PDF
